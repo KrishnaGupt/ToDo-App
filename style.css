@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+#heading{
+    padding: 18px;
+    position: absolute;
+    top: 20px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px 0px #00000069;
+}
+
+#add_task{
+    background-color: #fff;
+    padding: 20px;
+    width: 480px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px 0px #00000047;
+}
+#add_task_name{
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 350px;
+}
+#add_to_task{
+    background-color: #8052ec;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 450px;
+    transition: .4s ease-in all;
+}
+.task_block{
+    display: flex;
+    width: 420px;
+    justify-content: space-between;   
+    margin: 15px;
+}
+.task_p{
+    color: #686868;
+}
+.bi{
+    margin: 2px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.bi-trash{
+    color: #fff;
+    background-color: #8052ec;
+}
+
+
+@media only screen and (max-width: 580px){
+    body{
+        justify-content: normal;
+    }
+    #heading{
+        width: 90%;
+        margin: 30px 0;
+        font-size: 25px;
+        text-align: center;
+        position: inherit;
+    }
+    #add_task{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #add_task_name{
+        width: 60%;
+        font: 14px;
+    }
+    #add_to_task{
+        font-size: 14px;
+    }
+    #tasks{
+        width: 90%;
+        font-size: 12px;
+    }
+    .task_block{
+        width: 100%;
+    }
+}
